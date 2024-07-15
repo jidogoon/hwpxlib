@@ -26,7 +26,7 @@ public abstract class ElementReader {
         childIndex = 0;
         int count = attrs.getLength();
         for (int index = 0; index < count; index++) {
-            setAttribute(attrs.getLocalName(index), attrs.getValue(index));
+            setAttribute(attrs.getQName(index), attrs.getValue(index));
         }
     }
 
